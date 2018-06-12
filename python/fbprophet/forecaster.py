@@ -13,6 +13,9 @@ from __future__ import unicode_literals
 from collections import defaultdict
 from datetime import timedelta
 import logging
+
+logger = logging.getLogger(__name__)
+
 import warnings
 
 import numpy as np
@@ -34,8 +37,7 @@ from fbprophet.plot import (
     plot_seasonality,
 )
 
-logging.basicConfig()
-logger = logging.getLogger(__name__)
+
 warnings.filterwarnings("default", category=DeprecationWarning)
 
 
